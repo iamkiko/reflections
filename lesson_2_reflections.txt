@@ -3,12 +3,27 @@
 * An empty repository is created, which contains no commit. It works that way so that it won't automatically include files you actually don't want to keep track of.
 
 
+
+
+
 -	How is the staging area different from the working directory and the repository?
 	What value do you think it offers?
+
+* The staging area is like a temporary 'loading zone' or preparation area before the final changes are committed to git. It allows us to add changes in the staging area, individually. 
+
+It's valuable because it allows us to track the logical changes for the commits. -> we can further clarify our commits or group/split them, depending on nature of commit
+
+
+
 
 
 -	How can you use the staging area to make sure you have one commit per logical
 	change?
+
+
+
+
+
 
 
 -	What are some situations when branches would be helpful in keeping your history

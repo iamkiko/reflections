@@ -26,7 +26,11 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    It would have to be through a cloud computing service or via email.
+
+    Easier: auto updates via google drive or similar operation
+
+    Harder: it can include unrequired or undesirable files which may have errors
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?

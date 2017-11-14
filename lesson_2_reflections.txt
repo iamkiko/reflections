@@ -20,7 +20,7 @@ It's valuable because it allows us to track the logical changes for the commits.
 -	How can you use the staging area to make sure you have one commit per logical
 	change?
 
-
+* First add files that are related to the first logical change you want to commit, and after making sure you have staged all the files, make a commit. Next you stage other files that are related to the second logical change you want to commit, and so on.
 
 
 
@@ -30,12 +30,52 @@ It's valuable because it allows us to track the logical changes for the commits.
 	organized? How would branches help?
 
 
+* Branches are useful for when we want to experiment with adding or removing new features. This way, we can kind of 'bookmark' instances. Branches assist with us being able to access the 'instances' when needed, especially if something goes wrong or if we want to overwrite with a better version.
+
+Also useful for whenever we do something different, switching context/feature, fixing bugs etc. 
+
+Master branch: production quality which you share with other devs
+Development branch: for active work on our project
+Experimental branch: we expect things to break or just as a sandbox
+
+Branches are good for collaborating with others but also with ourselves
+
+
+
+
 -	How do the diagrams help you visualize the branch structure?
+
+
+* The branches clearly lay out what happens when we make commits, branches and essentially what 'path' each file is on. We can trace various changes and commits based on the branch structure.
+
 
 
 -	What is the result of merging two branches together? Why do we represent it in
 	the diagram the way we do?
 
+*    The result of merging two branches together is a combined commit with all
+    the changes from both branches.  We represent the merge in the diagram as
+    having two parents - the two commits that it combined.  
+
+    For non-merge commits, the parent of the commit is the state of the files before that
+    commit was made.  For merge commits, there was no one state of the files
+    before the commit was made, since the merge commit combines two commits
+    together, so it makes sense for the merge commit to have two parents.
+
 
 -	What are the pros and cons of Git's automatic merging vs. always doing merges
 	manually?
+
+    Git's automatic merging can save the user a lot of time!  Especially when
+    multiple people are working together, merging everything manually could be
+    very painful.
+
+    The downside of automatic merging is that it's not perfect.  Merging the
+    coins branch with the master branch, which included color, resulted in
+    inconsistent visuals, where most items were colored but the coins were not.
+    Git could even make worse mistakes - for example, if one branch deleted a
+    function, and another branch added a call to that function, Git would merge
+    those together with no conflict and the resulting code would be broken.
+
+    Overall, Git's merging can save a lot of time, but it's important to always
+    double check that the code still works after doing a merge.

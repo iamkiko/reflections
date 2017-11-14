@@ -35,4 +35,4 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When working on a large project, it would be good to branch off our own work if we are working on special/side features or not wanting to jeopardize the master project. Of course, this depends on the scope of the amendments being made
